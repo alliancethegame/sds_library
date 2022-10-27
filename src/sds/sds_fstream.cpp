@@ -6,6 +6,7 @@
 #include <stdio.h>
 
 #include <limits>
+#include <cstddef>
 
 #ifdef WIN32
 #	include <io.h>

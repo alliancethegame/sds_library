@@ -6,6 +6,7 @@
 #include <stdint.h>
 #include <algorithm>
 #include <string>
+#include <cstddef>
 
 namespace sds
 {

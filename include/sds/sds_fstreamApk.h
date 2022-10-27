@@ -4,6 +4,7 @@
 #pragma once
 
 #include "sds_fstream.h"
+#include <cstddef>
 
 struct AAsset;
 typedef struct AAssetManager AAssetManager;

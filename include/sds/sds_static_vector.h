@@ -51,10 +51,12 @@ namespace sds
 		const_iterator end() const { return m_data.begin() + m_size; }
 
 		std::size_t size() const { return m_size; }
-		std::size_t capacity() const { return N; }
-		bool        empty() const { return m_size == 0; }
-		T          &operator[]( std::size_t i ) { return m_data[i]; }
-		const T    &operator[]( std::size_t i ) const { return m_data[i]; }
+
+		constexpr std::size_t capacity() const { return N; }
+
+		bool     empty() const { return m_size == 0; }
+		T       &operator[]( std::size_t i ) { return m_data[i]; }
+		const T &operator[]( std::size_t i ) const { return m_data[i]; }
 
 	private:
 		std::array<T, N> m_data;
